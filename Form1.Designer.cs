@@ -45,7 +45,7 @@ namespace Lab2
             this.SAX = new System.Windows.Forms.RadioButton();
             this.LINQ_TO_XML = new System.Windows.Forms.RadioButton();
             this.Results = new System.Windows.Forms.RichTextBox();
-            this.Search = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.Transformation = new System.Windows.Forms.Button();
             this.Clear = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -207,14 +207,15 @@ namespace Lab2
             this.Results.TabIndex = 3;
             this.Results.Text = "";
             // 
-            // Search
+            // btnSearch
             // 
-            this.Search.Location = new System.Drawing.Point(49, 444);
-            this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(127, 32);
-            this.Search.TabIndex = 4;
-            this.Search.Text = "Search";
-            this.Search.UseVisualStyleBackColor = true;
+            this.btnSearch.Location = new System.Drawing.Point(49, 444);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(127, 32);
+            this.btnSearch.TabIndex = 4;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.Search_Click);
             // 
             // Transformation
             // 
@@ -224,6 +225,7 @@ namespace Lab2
             this.Transformation.TabIndex = 4;
             this.Transformation.Text = "Transformation";
             this.Transformation.UseVisualStyleBackColor = true;
+            this.Transformation.Click += new System.EventHandler(this.Transformation_Click);
             // 
             // Clear
             // 
@@ -241,7 +243,7 @@ namespace Lab2
             this.ClientSize = new System.Drawing.Size(1060, 586);
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.Transformation);
-            this.Controls.Add(this.Search);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.Results);
             this.Controls.Add(this.LINQ_TO_XML);
             this.Controls.Add(this.SAX);
@@ -283,7 +285,7 @@ namespace Lab2
         private System.Windows.Forms.RadioButton SAX;
         private System.Windows.Forms.RadioButton LINQ_TO_XML;
         private System.Windows.Forms.RichTextBox Results;
-        private System.Windows.Forms.Button Search;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button Transformation;
         private System.Windows.Forms.Button Clear;
     }
