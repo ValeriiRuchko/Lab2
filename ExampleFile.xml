@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Artists>
+	<Artist
+		Name = "Aurora Aksnes"
+		CountryOfOrigin = "Norway"
+		DebutY = "2012"
+		ArtType = "Music"
+		Style = "Synth-pop"
+		FamousWork = "The Seed"
+		>
+	</Artist>
+	<Artist
+		Name = "Hiroyuki Sawano"
+		CountryOfOrigin = "Japan"
+		DebutY = "2004"
+		ArtType = "Music"
+		Style = "Orchestral"
+		FamousWork = "Vogel im Käfig"
+		>
+	</Artist>
+	<Artist
+		Name = "Ilya Kuvshinov"
+		CountryOfOrigin = "Russia"
+		DebutY = "2011"
+		ArtType = "Character design"
+		Style = "Own"
+		FamousWork = "Birthday Wonderland"
+		>
+	</Artist>
+	<Artist
+		Name = "Robert Pattinson"
+		CountryOfOrigin = "England"
+		DebutY = "2004"
+		ArtType = "Movies"
+		Style = "Drama"
+		FamousWork = "The Lighthouse"
+		>
+	</Artist>
+	<Artist
+		Name = "William Dafoe"
+		CountryOfOrigin = "USA"
+		DebutY = "1979"
+		ArtType = "Movies"
+		Style = "Drama and Comedy"
+		FamousWork = "Togo"
+		>
+	</Artist>
+	<Artist
+		Name = "Hans Zimmer"
+		CountryOfOrigin = "Germany"
+		DebutY = "1977"
+		ArtType = "Music"
+		Style = "Orchestral"
+		FamousWork = "Time(Inception)"
+		>
+	</Artist>
+	<Artist
+		Name = "Matt Haig"
+		CountryOfOrigin = "England"
+		DebutY = "2004"
+		ArtType = "Books"
+		Style = "Fiction and non-fiction"
+		FamousWork = "Notes on a nervous planet"
+		>
+	</Artist>
+	<Artist
+		Name = "Gillian Flynn"
+		CountryOfOrigin = "USA"
+		DebutY = "2006"
+		ArtType = "Books"
+		Style = "Thriller"
+		FamousWork = "Gone Girl"
+		>
+	</Artist>
+</Artists>
