@@ -35,12 +35,12 @@ namespace Lab2
             this.ArtType = new System.Windows.Forms.CheckBox();
             this.Style = new System.Windows.Forms.CheckBox();
             this.Famous_work = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboboxNames = new System.Windows.Forms.ComboBox();
+            this.comboboxCountroforgn = new System.Windows.Forms.ComboBox();
+            this.comboboxDebut = new System.Windows.Forms.ComboBox();
+            this.comboboxArtT = new System.Windows.Forms.ComboBox();
+            this.comboboxStyl = new System.Windows.Forms.ComboBox();
+            this.comboboxFmworks = new System.Windows.Forms.ComboBox();
             this.DOM = new System.Windows.Forms.RadioButton();
             this.SAX = new System.Windows.Forms.RadioButton();
             this.LINQ_TO_XML = new System.Windows.Forms.RadioButton();
@@ -111,60 +111,60 @@ namespace Lab2
             this.Famous_work.UseVisualStyleBackColor = true;
             this.Famous_work.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
-            // comboBox1
+            // comboboxNames
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(314, 40);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboboxNames.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboboxNames.FormattingEnabled = true;
+            this.comboboxNames.Location = new System.Drawing.Point(314, 40);
+            this.comboboxNames.Name = "comboboxNames";
+            this.comboboxNames.Size = new System.Drawing.Size(121, 28);
+            this.comboboxNames.TabIndex = 1;
+            this.comboboxNames.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // comboBox2
+            // comboboxCountroforgn
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(314, 82);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 28);
-            this.comboBox2.TabIndex = 1;
+            this.comboboxCountroforgn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboboxCountroforgn.FormattingEnabled = true;
+            this.comboboxCountroforgn.Location = new System.Drawing.Point(314, 82);
+            this.comboboxCountroforgn.Name = "comboboxCountroforgn";
+            this.comboboxCountroforgn.Size = new System.Drawing.Size(121, 28);
+            this.comboboxCountroforgn.TabIndex = 1;
             // 
-            // comboBox3
+            // comboboxDebut
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(314, 121);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 28);
-            this.comboBox3.TabIndex = 1;
+            this.comboboxDebut.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboboxDebut.FormattingEnabled = true;
+            this.comboboxDebut.Location = new System.Drawing.Point(314, 121);
+            this.comboboxDebut.Name = "comboboxDebut";
+            this.comboboxDebut.Size = new System.Drawing.Size(121, 28);
+            this.comboboxDebut.TabIndex = 1;
             // 
-            // comboBox4
+            // comboboxArtT
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(314, 164);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 28);
-            this.comboBox4.TabIndex = 1;
+            this.comboboxArtT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboboxArtT.FormattingEnabled = true;
+            this.comboboxArtT.Location = new System.Drawing.Point(314, 164);
+            this.comboboxArtT.Name = "comboboxArtT";
+            this.comboboxArtT.Size = new System.Drawing.Size(121, 28);
+            this.comboboxArtT.TabIndex = 1;
             // 
-            // comboBox5
+            // comboboxStyl
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(314, 207);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 28);
-            this.comboBox5.TabIndex = 1;
+            this.comboboxStyl.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboboxStyl.FormattingEnabled = true;
+            this.comboboxStyl.Location = new System.Drawing.Point(314, 207);
+            this.comboboxStyl.Name = "comboboxStyl";
+            this.comboboxStyl.Size = new System.Drawing.Size(121, 28);
+            this.comboboxStyl.TabIndex = 1;
             // 
-            // comboBox6
+            // comboboxFmworks
             // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(314, 248);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 28);
-            this.comboBox6.TabIndex = 1;
+            this.comboboxFmworks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboboxFmworks.FormattingEnabled = true;
+            this.comboboxFmworks.Location = new System.Drawing.Point(314, 248);
+            this.comboboxFmworks.Name = "comboboxFmworks";
+            this.comboboxFmworks.Size = new System.Drawing.Size(121, 28);
+            this.comboboxFmworks.TabIndex = 1;
             // 
             // DOM
             // 
@@ -246,12 +246,12 @@ namespace Lab2
             this.Controls.Add(this.LINQ_TO_XML);
             this.Controls.Add(this.SAX);
             this.Controls.Add(this.DOM);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboboxFmworks);
+            this.Controls.Add(this.comboboxStyl);
+            this.Controls.Add(this.comboboxArtT);
+            this.Controls.Add(this.comboboxDebut);
+            this.Controls.Add(this.comboboxCountroforgn);
+            this.Controls.Add(this.comboboxNames);
             this.Controls.Add(this.Famous_work);
             this.Controls.Add(this.Style);
             this.Controls.Add(this.ArtType);
@@ -273,12 +273,12 @@ namespace Lab2
         private System.Windows.Forms.CheckBox ArtType;
         private System.Windows.Forms.CheckBox Style;
         private System.Windows.Forms.CheckBox Famous_work;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox comboboxNames;
+        private System.Windows.Forms.ComboBox comboboxCountroforgn;
+        private System.Windows.Forms.ComboBox comboboxDebut;
+        private System.Windows.Forms.ComboBox comboboxArtT;
+        private System.Windows.Forms.ComboBox comboboxStyl;
+        private System.Windows.Forms.ComboBox comboboxFmworks;
         private System.Windows.Forms.RadioButton DOM;
         private System.Windows.Forms.RadioButton SAX;
         private System.Windows.Forms.RadioButton LINQ_TO_XML;

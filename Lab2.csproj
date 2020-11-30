@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnalizatorXMLDOMStrategy.cs" />
+    <Compile Include="AnalizatorXMLLINQStrategy.cs" />
+    <Compile Include="AnalizatorXMLSAXStrategy.cs" />
+    <Compile Include="Artists.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
