@@ -40,22 +40,22 @@ namespace Lab2
         private void addItems(XmlNode n)
         {
             if (!comboboxNames.Items.Contains(n.SelectSingleNode("@Name").Value))
-                comboboxNames.Items.Add(n.SelectSingleNode("@Name"));
+                comboboxNames.Items.Add(n.SelectSingleNode("@Name").Value);
 
-            if(!comboboxNames.Items.Contains(n.SelectSingleNode("@CountryOfOrigin").Value))
-                comboboxNames.Items.Add(n.SelectSingleNode("@CountryOfOrigin"));
+            if(!comboboxCountroforgn.Items.Contains(n.SelectSingleNode("@CountryOfOrigin").Value))
+                comboboxCountroforgn.Items.Add(n.SelectSingleNode("@CountryOfOrigin").Value);
 
-            if (!comboboxNames.Items.Contains(n.SelectSingleNode("@Debut").Value))
-                comboboxNames.Items.Add(n.SelectSingleNode("@Debut"));
+            if(!comboboxDebut.Items.Contains(n.SelectSingleNode("@DebutY").Value))
+                comboboxDebut.Items.Add(n.SelectSingleNode("@DebutY").Value);
 
-            if (!comboboxNames.Items.Contains(n.SelectSingleNode("@ArtType").Value))
-                comboboxNames.Items.Add(n.SelectSingleNode("@ArtType"));
+            if(!comboboxArtT.Items.Contains(n.SelectSingleNode("@ArtType").Value))
+                comboboxArtT.Items.Add(n.SelectSingleNode("@ArtType").Value);
 
-            if(!comboboxNames.Items.Contains(n.SelectSingleNode("@Style").Value))
-                comboboxNames.Items.Add(n.SelectSingleNode("@Style"));
+            if(!comboboxStyl.Items.Contains(n.SelectSingleNode("@Style").Value))
+                comboboxStyl.Items.Add(n.SelectSingleNode("@Style").Value);
 
-            if (!comboboxNames.Items.Contains(n.SelectSingleNode("@FamousWork").Value))
-                comboboxNames.Items.Add(n.SelectSingleNode("@FamousWork"));
+            if(!comboboxFmworks.Items.Contains(n.SelectSingleNode("@FamousWork").Value))
+                comboboxFmworks.Items.Add(n.SelectSingleNode("@FamousWork").Value);
         }
 
 
@@ -79,7 +79,7 @@ namespace Lab2
             Results.Text = "";
             Artists artist = new Artists();
 
-            if (Name.Checked)
+            if (NameL.Checked)
                 artist.Name = comboboxNames.SelectedItem.ToString();
 
             if (CountryOfOrigin.Checked)
@@ -108,28 +108,35 @@ namespace Lab2
             if (LINQ_TO_XML.Checked)
                 analizator = new AnalizatorXMLLINQStrategy();
 
-            List<Artists> searchResult = Search(artist, analizator);
+            Search search = new Search(analizator, artist);
+            List<Artists> results = search.SearchAlgorithm();
 
-            foreach(Artists artst in searchResult)
+            //List<Artists> searchResult = Search(artist, analizator);
+            //List<Artists> searchResult = analizator.Search(artist);
+
+            foreach(Artists artst in results)
             {
-                Results.Text += "Name:" + artst.Name + '\n';
-                Results.Text += "CountryOfOrigin:" + artst.CountryOfOrigin + '\n';
-                Results.Text += "DebutYear:" + artst.DebutY + '\n';
-                Results.Text += "ArtType:" + artst.ArtType + '\n';
-                Results.Text += "Style:" + artst.Style + '\n';
-                Results.Text += "FamousWork:" + artst.FamousWork + '\n';
+                Results.Text += "Name:" + artst.Name + "\n";
+                Results.Text += "CountryOfOrigin:" + artst.CountryOfOrigin + "\n";
+                Results.Text += "DebutYear:" + artst.DebutY + "\n";
+                Results.Text += "ArtType:" + artst.ArtType + "\n";
+                Results.Text += "Style:" + artst.Style + "\n";
+                Results.Text += "FamousWork:" + artst.FamousWork + "\n";
 
                 Results.Text += "\n\n\n";
             }
         }
-
+        
+        
+        /*
         private List<Artists> Search(Artists a, IAnalizatorXMLStrategy ian)
         {
             List<Artists> res = new List<Artists>();
-            res = ian.Search(a);
+            ian.Search(a);
             return res;
         }
-
+        */
+        
         private void Transformation_Click(object sender, EventArgs e)
         {
             transform();
@@ -139,10 +146,15 @@ namespace Lab2
         {
             XslCompiledTransform xct = new XslCompiledTransform();
             xct.Load(@"Z:\Lab2\ExampleFile.xsl");
-            string fMXL = @"Z:\Lab2\ExampleFile.xsl";
-            string fHTML = @"Z:\Lab2\ExampleFile.xsl";
-            xct.Transform(fMXL, fHTML);
+            string fXML = @"Z:\Lab2\ExampleFile.xsl";
+            string fHTML = @"Z:\Lab2\ExampleFile.html";
+            xct.Transform(fXML, fHTML);
 
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            Results.Text = "";
         }
     }
 }

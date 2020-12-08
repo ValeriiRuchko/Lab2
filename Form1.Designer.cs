@@ -29,7 +29,7 @@ namespace Lab2
         /// </summary>
         private void InitializeComponent()
         {
-            this.Name = new System.Windows.Forms.CheckBox();
+            this.NameL = new System.Windows.Forms.CheckBox();
             this.CountryOfOrigin = new System.Windows.Forms.CheckBox();
             this.DebutY = new System.Windows.Forms.CheckBox();
             this.ArtType = new System.Windows.Forms.CheckBox();
@@ -50,15 +50,15 @@ namespace Lab2
             this.Clear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Name
+            // NameL
             // 
-            this.Name.AutoSize = true;
-            this.Name.Location = new System.Drawing.Point(48, 44);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(77, 24);
-            this.Name.TabIndex = 0;
-            this.Name.Text = "Name";
-            this.Name.UseVisualStyleBackColor = true;
+            this.NameL.AutoSize = true;
+            this.NameL.Location = new System.Drawing.Point(48, 44);
+            this.NameL.Name = "NameL";
+            this.NameL.Size = new System.Drawing.Size(77, 24);
+            this.NameL.TabIndex = 0;
+            this.NameL.Text = "Name";
+            this.NameL.UseVisualStyleBackColor = true;
             // 
             // CountryOfOrigin
             // 
@@ -206,6 +206,7 @@ namespace Lab2
             this.Results.Size = new System.Drawing.Size(572, 535);
             this.Results.TabIndex = 3;
             this.Results.Text = "";
+            this.Results.TextChanged += new System.EventHandler(this.Search_Click);
             // 
             // btnSearch
             // 
@@ -235,6 +236,7 @@ namespace Lab2
             this.Clear.TabIndex = 4;
             this.Clear.Text = "Clear";
             this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // Form1
             // 
@@ -259,7 +261,7 @@ namespace Lab2
             this.Controls.Add(this.ArtType);
             this.Controls.Add(this.DebutY);
             this.Controls.Add(this.CountryOfOrigin);
-            this.Controls.Add(this.Name);
+            this.Controls.Add(this.NameL);
             this.Name = "Form1";
             this.Text = "XMLArtistsForm";
             this.ResumeLayout(false);
@@ -269,7 +271,7 @@ namespace Lab2
 
         #endregion
 
-        private System.Windows.Forms.CheckBox Name;
+        private System.Windows.Forms.CheckBox NameL;
         private System.Windows.Forms.CheckBox CountryOfOrigin;
         private System.Windows.Forms.CheckBox DebutY;
         private System.Windows.Forms.CheckBox ArtType;
